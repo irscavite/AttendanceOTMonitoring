@@ -1,0 +1,15 @@
+ADMIN SUPERVISOR MODULE ACCESS FIX — 2026-08-14
+
+Fixed Admin Department module grants for Supervisor accounts.
+
+Changes:
+- A Supervisor assigned to the Admin Department can now keep Supervisor access AND see any Admin modules granted by IT.
+- Supported additive Admin modules:
+  • Employee Master List
+  • Leave & Approved OT
+  • Cutoff
+  • Department Summary
+- Admin module navigation is now shown for both Employee and Supervisor accounts when granted.
+- Admin module pages now honor moduleAccess regardless of whether the account role is Employee or Supervisor.
+- Firebase account-profile changes now refresh the signed-in user's role/module access in real time when the accounts node changes. A logout/login is no longer normally required after IT changes module access.
+- Leave & Approved OT pending badge is shown to any account granted that module.

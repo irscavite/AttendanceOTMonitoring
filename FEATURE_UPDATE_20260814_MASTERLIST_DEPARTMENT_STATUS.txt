@@ -1,0 +1,9 @@
+Employee Master List update — 2026-08-14
+
+Displayed columns:
+Employee Name / Position / Department / Status / Leave / Absent / SL / VL / Action
+
+Employee No. remains hidden from the visible Master List table. It is still kept internally as the record key so existing Firebase links, attendance, leave, OT, and account mappings continue to work.
+
+Edit action remains limited to SL and VL remaining credits only.
+Excel export now includes Department and Status.

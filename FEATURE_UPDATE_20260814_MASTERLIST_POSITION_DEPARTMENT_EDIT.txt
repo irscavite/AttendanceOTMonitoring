@@ -1,0 +1,11 @@
+EMPLOYEE MASTER LIST EDIT UPDATE
+
+The Employee Master List Edit form now allows Admin-authorized users to edit:
+- Position
+- Department
+- Employment Status
+- SL Remaining Credit
+- VL Remaining Credit
+
+Employee No. remains hidden and unchanged so account, attendance, leave, and OT links remain intact.
+Department changes are stored as employee profile overrides and move the employee into the selected department throughout department-based views.

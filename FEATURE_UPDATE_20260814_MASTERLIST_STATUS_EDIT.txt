@@ -1,0 +1,9 @@
+Employee Master List Status Edit Update
+Date: 2026-08-14
+
+Changes:
+- Employee Master List Edit now allows Employment Status to be changed.
+- Status options use the existing system statuses: Probationary, Regular, On-Call, AWOL, Resigned, End Of Contract.
+- SL and VL remaining credits remain editable in the same Edit modal.
+- Saving updates the employee profile status and the SL/VL balances in the Firebase-synced app data.
+- Employee No. remains hidden from the visible master list but stays as the internal record key.

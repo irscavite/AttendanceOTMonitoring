@@ -1,0 +1,12 @@
+ADMIN / HR ACCESS UPDATE
+
+1. Removed "HR" from IT -> Account Access role choices.
+2. HR staff are treated as employees of the Admin Department.
+3. For Admin Department employees, IT can grant these additional modules independently:
+   - Employee Master List
+   - Leave & Approved OT
+   - Cutoff
+   - Department Summary
+4. Admin employees keep their normal Employee self-service pages (Dashboard, Attendance & OT, My OT Submissions, File Leave, My Leave Requests).
+5. Existing legacy managed accounts with role "HR" are shown as Employee and treated as having all four Admin modules when edited, allowing migration without losing access.
+6. Module permissions are saved in Firebase account profiles as moduleAccess.

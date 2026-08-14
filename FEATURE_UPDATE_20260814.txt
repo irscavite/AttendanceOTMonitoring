@@ -1,0 +1,26 @@
+HR / ADMIN
+- HR sidebar now has New OT Request and Leave Request.
+- Both pages use the Admin department roster from HR Employee Master List.
+- New OT Request: choose Admin employee, OT date, shift, schedule, OT type, OT in/out, reason.
+- Holiday OT type is automatic.
+- HR-filed Admin OT goes directly to Request Approver.
+- Leave Request supports VL / SL / Emergency Leave, With Pay / Without Pay, credits, date range, and reason.
+- HR-filed Admin leave goes directly to Request Approver to avoid self-approval.
+
+SUPERVISOR
+- New OT Request shows the logged-in Supervisor's own linked employee name at the top.
+- Click Input My Own Data to enter the Supervisor's attendance / OT.
+- Supervisor own OT goes directly to Request Approver (no self-review).
+- Other employee OT remains Employee -> Supervisor Review -> Request Approver.
+
+EDITABLE SHIFT TIME UPDATE
+- Supervisor > Employee Schedule: Shift Time (Schedule In / Schedule Out) is editable per employee and saved for future entries.
+- Supervisor > New OT Request: Edit Time now persists the employee Shift Time instead of changing only the current row.
+- Supervisor > Input My Own Data: own Shift Time is directly editable before submission and is saved for future entries.
+- HR > Admin New OT Request: Schedule In / Schedule Out remain editable.
+- Regular Employee accounts still cannot change their assigned Shift Time.
+
+UI FIX - Employee Schedule
+- Fixed Shift Time controls overlapping the Day Off dropdown.
+- Shift Time now uses a contained two-field layout with Save Time on its own row.
+- Rebalanced Employee Schedule column widths for desktop and smaller screens.
