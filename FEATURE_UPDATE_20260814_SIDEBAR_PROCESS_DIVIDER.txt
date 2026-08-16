@@ -1,1 +1,0 @@
-Added a clear ADMIN DEPARTMENT divider in the sidebar whenever Admin module access is present. This visually separates Supervisor/Employee workflow pages from Admin Department modules.
