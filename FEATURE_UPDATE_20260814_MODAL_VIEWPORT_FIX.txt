@@ -1,8 +1,0 @@
-WINDOW / TASKBAR OVERLAP FIX
-
-- Fixed tall modal forms being clipped at the bottom on short laptop/desktop windows.
-- Modal height is now limited to the visible browser viewport.
-- The form body scrolls internally when needed.
-- Modal action buttons (Cancel / Create Account / Save, etc.) stay visible above the bottom edge.
-- Added safe-area spacing for devices with reserved screen areas.
-- Added compact modal spacing when the browser window height is 680px or less.
