@@ -1,8 +1,0 @@
-EMPLOYEE MASTER LIST DELETE ACTION
-
-- Added Delete button beside Edit in Employee Master List.
-- Delete requires a confirmation modal.
-- Delete removes the employee from the active Employee Master List and schedule/setup configuration.
-- Employee profile overrides, shift/schedule/location/day-off settings, SL/VL overrides, pending IT account request, and supervisor roster notification are removed.
-- Historical attendance, overtime, and leave records are retained for reporting/history.
-- If a Firebase Authentication/system login was already created, the master-list delete does not remove that Authentication user. IT must manage/disable that login separately.
