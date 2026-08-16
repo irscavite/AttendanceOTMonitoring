@@ -1,6 +1,0 @@
-EMPLOYEE SCHEDULE SAVE BUTTON UPDATE
-
-- The Shift Time Save button is hidden when the currently displayed shift time is already saved.
-- When the supervisor edits Shift In or Shift Out, the Save Time button appears again.
-- After a successful Save Time action, the button hides immediately.
-- Saved shift times remain editable at any time by changing either time field.
