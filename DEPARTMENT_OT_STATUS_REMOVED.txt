@@ -1,0 +1,8 @@
+Department OT Status removal — 2026-09-11
+
+- Removed the legacy Department OT Status page from Supervisor accounts.
+- Removed the Department Requests navigation item that opened the retired page.
+- Existing old links/bookmarks to my-requests now open Attendance instead.
+- Supervisor dashboard OT cards now open Attendance.
+- OT approval/revision notifications now open Attendance.
+- After submitting OT, Supervisor remains in the consolidated Attendance workflow.
