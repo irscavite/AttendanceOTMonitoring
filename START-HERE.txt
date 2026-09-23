@@ -1,0 +1,32 @@
+ATTENDANCE & OT MONITORING - STRAIGHT DUTY BREAK CORRECTED
+
+Upload all web files in this folder together, replacing the existing webapp files.
+This package builds on the prior IT Record Maintenance update; keep the included
+Firebase Realtime Database rules if they have not yet been published.
+
+On a Regular Day, the first 8 paid hours of the assigned shift are regular.
+Worked hours beyond the shift count as OT. A separate nine-hour Straight Duty
+schedule includes one unpaid one-hour break and therefore contributes 8 paid
+OT hours. Example: assigned shift 06:00-15:00 (8 regular paid hours), normal
+OT 15:00-18:00 (3 OT hours), Straight Duty 18:00-03:00 (9 clock hours minus
+1 break hour = 8 OT hours): total OT is 11 hours. Additional Straight Duty OT
+In/Out fields are optional; enter them only when hours go beyond that block.
+Breaks are excluded from the employee worked-hours preview. The earlier
+06:00-15:00 Straight Duty schedule plus 15:00-20:00 now counts 5 OT hours
+because the 06:00-15:00 block includes one break hour.
+Normal (non-Straight Duty) OT minimum and rounding rules are unchanged.
+Already approved records retain their saved OT totals.
+
+Supervisor accounts outside the Admin department now have an OT / Leave Summary
+navigation page and dashboard shortcut:
+- Select a From/To date and optionally an employee. The default is the current
+  payroll cutoff. Dates are inclusive.
+- Department total: approved OT hours by OT duty date; pending hours are shown
+  separately. OT amendments already included in the original approved total
+  are never added twice.
+- View OT totals by employee and individual OT records with approval status.
+- View leave history by employee. A multi-day request appears when any of its
+  leave dates overlap the chosen range.
+
+Admin department Supervisors and HR accounts keep their existing HR reports.
+No data is deleted or changed by this reporting page.
