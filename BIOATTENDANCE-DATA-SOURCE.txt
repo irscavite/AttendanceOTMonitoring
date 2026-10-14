@@ -1,0 +1,24 @@
+STRICT FIREBASE SOURCE SPLIT
+
+ATTENDANCE / ROSTER FIREBASE (AUTHORITATIVE)
+https://bioattendance-7cc7a-default-rtdb.asia-southeast1.firebasedatabase.app/
+- employee_master = Attendance roster (employee must stay visible even with no scan)
+- attendance scans = Time In / Time Out
+- No scan on selected date = No Scan (employee remains in table)
+- Full Name / Employee No. / Department / Position come from BioAttendance employee_master
+- OTMonitoring employee master must NOT add/remove Attendance roster members
+
+LEAVE FIREBASE
+https://otmonitoring-default-rtdb.firebaseio.com/
+- Approved leave comes from hrLeaveRequestsV1
+- Attendance page overlays fully Approved leave by Employee No. + covered date
+- Shows Approved Leave + Leave Type + Reason
+- Leave data is read through the authenticated OTMonitoring Firebase SDK connection
+
+TIME RULES
+- First valid scan = Time In
+- 2nd/latest valid scan = Time Out
+- Worked hours deduct 1 hour lunch when Time Out exists
+- Night shift is grouped by duty date
+
+This build intentionally ignores old Present attendance stored under hrDailyAttendanceV1 for the live Attendance page.
