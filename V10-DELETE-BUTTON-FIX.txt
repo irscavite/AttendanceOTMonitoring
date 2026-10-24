@@ -1,0 +1,1 @@
+V10 fix: Delete Record button was not visible to Admin Supervisor because canDeleteOwnManagerLeave required currentUser.role === 'HR'. Now permits HR and Admin Department Supervisor, but still requires linked employee number, request ownership check and confirmation. Includes Cancelled by Filer records. Refresh browser cache after deploying.
