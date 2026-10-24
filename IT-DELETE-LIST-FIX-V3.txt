@@ -1,2 +1,0 @@
-FIX: Firebase records-deleted sync notification no longer forces full IT Data Maintenance page render. After verified deletion, selected department/category/date remains and the chosen records reload. Other pages retain normal sync behavior.
-BACKUP Firebase before testing production deletions.
