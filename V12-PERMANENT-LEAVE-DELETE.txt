@@ -1,1 +1,0 @@
-V12: Cancel Leave now permanently removes the leave request and generated leave-only rows, rather than creating Cancelled by Filer. HR Leave Management displays legacy/cancelled requests even if absent from active masterlist. Back up Firebase before deleting live records. Actual clocked attendance and independent OT are protected. Live Firebase not tested.
