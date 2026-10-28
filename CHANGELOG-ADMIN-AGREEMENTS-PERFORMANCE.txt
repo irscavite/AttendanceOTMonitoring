@@ -1,0 +1,7 @@
+Changes (test build):
+- Removed OT Agreements from Admin-department Supervisor sidebar, without removing from other Supervisor/Employee roles.
+- Guarded both in-app navigation and direct OT_AGREEMENTS.html entry after session restoration.
+- Prevented Admin Supervisor Firebase OT Agreement page hydration and realtime subscription.
+- Preserved OT filing direct-to-Approver, approvals and historical database records.
+- No broad refactor of shared JS or unrelated HR database loading was performed; further performance measurements are required.
+- Source based on Attendance-OT-History-Duplicate-Display-Fix-TEST.zip.

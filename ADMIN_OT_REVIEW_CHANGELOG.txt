@@ -1,0 +1,11 @@
+Admin OT Review removal — test build
+
+- Admin-department Supervisor sidebar no longer contains OT Review.
+- Legacy HR role has no OT Review navigation (unchanged).
+- Old OTREVIEW.html direct URL for Admin Supervisor/HR redirects to DASHBOARD.html after session verification.
+- Router blocks the Admin roles from navigating to OT Review.
+- Firebase hydrateSupervisorPage(new-request) rejects Admin-department Supervisor, avoiding OT Review-only reads.
+- Other-department Supervisor OT Review remains available.
+- Admin filing/Approver routing, My OT and historical records are unchanged.
+
+Requires browser/live workflow testing before production.

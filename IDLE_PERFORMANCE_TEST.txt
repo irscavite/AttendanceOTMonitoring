@@ -1,0 +1,16 @@
+IDLE PERFORMANCE TEST BUILD — 2026-10-28
+
+Based on Attendance-Admin-OT-Review-Removed-TEST.zip.
+Changes: hidden Chrome tabs skip the 60s leave reconciliation; no reentrant maintenance; current page preserved on return; page-irrelevant maintenance skipped.
+No Firebase rules, approval routing or data schema changes.
+
+TEST:
+1. Backup current working version. Test in separate localhost folder.
+2. Test HR/Admin Supervisor: Masterlist, Department Summary, Leave Management.
+3. Keep Department Summary open 15-30 minutes, switch to another browser tab, then return and navigate.
+4. Verify Leave Management approved records and attendance synchronization, particularly after a date change.
+5. Test OT filing/approval and Department Summary Excel export.
+6. Compare Chrome Task Manager memory and DevTools Performance before/after.
+
+LIMITATIONS: The 1.33MB shared JS remains, and this is NOT a complete Firebase query or JS modularization.
+Cannot validate live Firebase from local static inspection. Do not overwrite production until tested.

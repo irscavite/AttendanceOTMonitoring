@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b2a4a" />
+  <title>Eastern1961 Phils Inc - Employee Management System</title>
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="stylesheet" href="styles.20260813-employee-ot-dashboard-status.css?v=20261020-maintenance-leave-actions" />
+</head>
+<body>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <section id="loginView" class="login-page ems-login-page">
+    <div class="login-shell ems-login-shell">
+      <section class="login-brand-panel ems-login-brand-panel">
+        <div class="brand-row ems-login-brand-row">
+          <img class="company-logo company-logo-login" src="logo.png" alt="Eastern1961 Phils Inc" width="142" height="56" />
+          <div class="brand-copy ems-login-brand-copy">
+            <span>EASTERN1961 PHILS INC</span>
+            <strong>Employee Management System</strong>
+          </div>
+        </div>
+
+        <div class="login-hero-copy ems-login-hero-copy">
+          <span class="ems-login-eyebrow">EMPLOYEE MANAGEMENT WORKSPACE</span>
+          <h1>Manage employees.<br>Handle leave.<br>Keep records clear.</h1>
+          <p>A clean internal workspace for employee records, leave, applicant monitoring, approvals, and daily HR administration.</p>
+        </div>
+
+        <div class="ems-login-feature-grid" aria-label="System modules">
+          <div class="ems-login-feature-card">
+            <span class="ems-login-feature-icon">✓</span>
+            <div><strong>Employees</strong><small>Centralized employee records</small></div>
+          </div>
+          <div class="ems-login-feature-card">
+            <span class="ems-login-feature-icon">◷</span>
+            <div><strong>Leave Monitoring</strong><small>Requests and approvals</small></div>
+          </div>
+          <div class="ems-login-feature-card">
+            <span class="ems-login-feature-icon">◎</span>
+            <div><strong>Applicants</strong><small>Recruitment pipeline tracking</small></div>
+          </div>
+          <div class="ems-login-feature-card">
+            <span class="ems-login-feature-icon">▦</span>
+            <div><strong>Employee Records</strong><small>Organized admin workspace</small></div>
+          </div>
+        </div>
+
+        <div class="login-brand-footer ems-login-brand-footer">
+          <span class="ems-login-status-dot"></span>
+          Eastern1961 Phils Inc <span>•</span> Internal System
+        </div>
+      </section>
+
+      <section class="login-form-panel ems-login-form-panel">
+        <div class="login-card ems-login-card">
+          <div class="ems-login-card-brand">
+            <img class="company-logo company-logo-form" src="logo.png" alt="Eastern1961 Phils Inc" width="108" height="42" />
+            <div>
+              <strong>Eastern1961</strong>
+              <span>Employee Management</span>
+            </div>
+          </div>
+
+          <div class="login-heading ems-login-heading">
+            <span class="section-label">SECURE ACCESS</span>
+            <h2>Welcome back</h2>
+            <p>Sign in using your assigned system account to continue.</p>
+          </div>
+
+          <form id="loginForm" class="login-form ems-login-form">
+            <label class="field ems-login-field">
+              <span>Username</span>
+              <div class="ems-login-input-wrap">
+                <span class="ems-login-input-icon" aria-hidden="true">♙</span>
+                <input id="username" autocomplete="username" placeholder="Enter username" required />
+              </div>
+            </label>
+            <label class="field ems-login-field">
+              <span>Password</span>
+              <div class="ems-login-input-wrap">
+                <span class="ems-login-input-icon" aria-hidden="true">●</span>
+                <input id="password" type="password" autocomplete="current-password" placeholder="Enter password" required />
+              </div>
+            </label>
+            <button class="btn btn-primary btn-block ems-login-submit" type="submit">Sign In</button>
+          </form>
+
+          <div class="ems-login-security-note">
+            <span>✓</span>
+            <p>Authorized personnel only. Your access is based on your assigned system role.</p>
+          </div>
+
+          <div id="firebaseStatus" class="firebase-status"></div>
+
+          <div id="initialSetupWrap" class="initial-setup-wrap hidden">
+            <div class="demo-title-row">
+              <span class="section-label">INITIAL SYSTEM SETUP</span>
+              <small>Create or link the first IT and HR Firebase accounts</small>
+            </div>
+            <form id="initialSetupForm" class="initial-setup-form">
+              <div class="setup-account-grid">
+                <div class="setup-account-card">
+                  <strong>IT Account</strong>
+                  <label class="field"><span>Firebase Email / Username</span><input id="setupITUsername" value="it" required autocomplete="username" placeholder="it or it@company.com"></label>
+                  <label class="field"><span>Password</span><input id="setupITPassword" type="password" minlength="12" required autocomplete="new-password"></label>
+                </div>
+                <div class="setup-account-card">
+                  <strong>HR Account</strong>
+                  <label class="field"><span>Firebase Email / Username</span><input id="setupHRUsername" value="hr" required autocomplete="username" placeholder="hr or hr@company.com"></label>
+                  <label class="field"><span>Password</span><input id="setupHRPassword" type="password" minlength="12" required autocomplete="new-password"></label>
+                </div>
+              </div>
+              <p class="schedule-management-note">Already created these users in Firebase Authentication? Enter the exact same email/username and password here. The system will link them to the IT and HR roles instead of creating duplicate users.</p>
+              <button class="btn btn-primary btn-block" type="submit">Create / Link IT & HR Accounts</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+
+
+<script src="firebase-config.js"></script>
+<script type="module" src="firebase-backend-v27.js?v=20261028-portal"></script>
+<script>
+(()=>{
+ const KEY='hrOvertimeSessionV3';
+ const routeFor=user=>user?.role==='IT'?'ACCOUNT_REQUESTS.html':'DASHBOARD.html';
+ const status=document.getElementById('firebaseStatus');
+ const form=document.getElementById('loginForm');
+ const showError=message=>{if(status){status.textContent=message;status.style.color='#bd2525';}};
+ const go=user=>{localStorage.setItem(KEY,JSON.stringify({...user,username:String(user.username||'').toLowerCase()}));location.replace(routeFor(user));};
+ const initialSetup=document.getElementById('initialSetupWrap');if(initialSetup)initialSetup.remove();
+ const ready=()=>new Promise((resolve,reject)=>{
+   let ticks=0;const check=()=>{if(window.OTFirebase)return resolve(window.OTFirebase);
+     if(++ticks>100)return reject(new Error('Firebase service unavailable.'));setTimeout(check,80);};check();
+ });
+ form?.addEventListener('submit',async event=>{
+  event.preventDefault();const button=form.querySelector('[type=submit]');button.disabled=true;
+  try{const api=await ready();await api.ready;const name=form.querySelector('#username')?.value?.trim().toLowerCase();const pwd=form.querySelector('#password')?.value;
+      if(!name||!pwd)throw new Error('Enter username and password.');go(await api.signIn(name,pwd));}
+  catch(error){showError(error?.message||'Unable to sign in.');button.disabled=false;}
+ });
+ (async()=>{try{const saved=JSON.parse(localStorage.getItem(KEY)||'null');if(!saved?.username)return;
+     const api=await ready();const user=await api.restoreSession(saved.username);
+     if(user)go(user);else localStorage.removeItem(KEY);
+ }catch(error){console.warn('Existing session could not be restored',error);}})();
+})();
+</script>
+
+</body>
+</html>
