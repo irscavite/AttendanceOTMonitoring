@@ -1,1 +1,0 @@
-TEST BUILD: Displays authenticated layout before Firebase data hydration finishes. No data actions are enabled until hydration finishes. Browser DevTools console shows authentication and hydration timing. ExcelJS removed from select non-export pages only. Still uses shared application JS and does not promise faster database queries. Test all roles and exports before production.
