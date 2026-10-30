@@ -1,6 +1,0 @@
-Transition test build (2026-10-28)
-
-Added loading overlay to 30 module pages and a lightweight prefetch-on-hover for sidebar destinations.
-No Firebase data, roles, approval logic or backend files changed.
-This improves perceived loading, but does NOT yet remove the shared 1.3 MB JavaScript or database hydration delays.
-Deploy to separate test folder, not production. Test login, dashboard, all page navigation, and approvals before replacement.
