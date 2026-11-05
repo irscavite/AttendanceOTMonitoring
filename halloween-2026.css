@@ -1,0 +1,87 @@
+/* HALLOWEEN 2026 — decorative visual overlay; remove this stylesheet and halloween-decor.js to restore original design. */
+:root{
+ --nav:#160e2d;--nav-2:#24113e;--nav-hover:#4c245d;
+ --primary:#a348d3;--primary-dark:#7535a5;--primary-soft:#f5edfc;
+ --accent:#f58b27;--bg:#f7f2fb;--surface:#fff;--surface-2:#fcf9ff;
+ --text:#322540;--muted:#766b81;--line:#e9def1;--line-strong:#d9c6e6;
+ --shadow:0 10px 28px rgba(56,25,75,.07);--shadow-lg:0 24px 70px rgba(30,12,48,.2);
+}
+body{background:
+ radial-gradient(circle at 8% 14%, rgba(255,153,54,.12), transparent 18%),
+ radial-gradient(circle at 88% 16%, rgba(173,78,209,.14), transparent 22%),
+ linear-gradient(180deg,#fbf7fe 0%,#f7f1fc 100%);
+ color:var(--text)}
+.login-page,.ems-login-page{background:
+ radial-gradient(circle at 12% 20%,rgba(255,135,22,.13),transparent 28%),
+ radial-gradient(circle at 85% 74%,rgba(135,60,204,.14),transparent 30%),
+ linear-gradient(180deg,#f8f1fd 0%,#f4ebfb 100%)}
+.login-shell,.ems-login-shell{border:1px solid #e5d7f0;box-shadow:0 24px 70px rgba(51,18,80,.17);overflow:hidden}
+.login-brand-panel,.ems-login-brand-panel{background:linear-gradient(145deg,#170e2f 0%,#321746 58%,#633070 100%)!important;color:#fff;position:relative;overflow:hidden}
+.login-brand-panel::before,.ems-login-brand-panel::before{background:radial-gradient(circle at 80% 20%,rgba(255,154,41,.21),transparent 38%)!important}
+.login-brand-panel::after,.ems-login-brand-panel::after{content:"";position:absolute;right:20px;bottom:22px;width:115px;height:115px;background:url('halloween-ghost.svg') center/contain no-repeat;opacity:.96;pointer-events:none;filter:drop-shadow(0 14px 18px rgba(12,2,24,.2))}
+.login-hero-copy h1,.ems-login-hero-copy h1{color:#fff}
+.login-hero-copy h1::before{content:'🎃  HALLOWEEN EDITION';display:block;margin:0 0 14px;color:#ffc16b;font-size:12px;letter-spacing:.15em;font-weight:800}
+.login-feature-card,.ems-login-feature-card{border-color:rgba(255,174,93,.24)!important;background:rgba(255,255,255,.05)}
+.ems-login-feature-icon{color:#ffae5e!important}
+.login-form-panel,.ems-login-form-panel{background:#fffafc;position:relative}
+.login-form-panel::after,.ems-login-form-panel::after{content:"";position:absolute;left:-18px;bottom:-18px;width:110px;height:110px;background:url('halloween-pumpkin.svg') center/contain no-repeat;opacity:.95;pointer-events:none}
+.ems-login-submit,.btn-primary{background:linear-gradient(115deg,#833bbb,#ad4ed1)!important;color:white!important;box-shadow:0 6px 20px rgba(132,54,183,.18)}
+.ems-login-submit:hover,.btn-primary:hover{background:linear-gradient(115deg,#692d99,#8d39b4)!important}
+.sidebar{background:linear-gradient(180deg,#170d2d,#2b1640 75%,#1c102e)!important;color:#f7edff;position:fixed!important;inset:0 auto 0 0!important;overflow:hidden}
+.sidebar::before{content:"";position:absolute;right:-10px;bottom:14px;width:70px;height:70px;background:url('halloween-pumpkin.svg') center/contain no-repeat;opacity:.78;pointer-events:none}
+.sidebar::after{content:"";position:absolute;left:0;top:0;width:120px;height:120px;background:url('halloween-web-corner.svg') left top/contain no-repeat;opacity:.42;pointer-events:none}
+.sidebar-head,.sidebar-section-label{border-color:rgba(255,255,255,.11)}
+.nav-btn:hover,.nav-btn.active{background:linear-gradient(90deg,rgba(238,129,39,.25),rgba(150,67,190,.32))!important;border-color:rgba(252,158,75,.25)!important}
+.sidebar-brand-text span,.identity-copy small{color:#d0b9dd}
+.topbar{background:#fffafd!important;border-bottom-color:#eadcf1!important;position:relative}
+.topbar::after{content:'👻';position:absolute;right:18px;top:10px;font-size:24px;opacity:.16;pointer-events:none}
+.topbar-copy h2{color:#3b1e4e}
+.hero-banner{background:linear-gradient(115deg,#311448,#602665 72%,#b25732)!important;color:#fff;position:relative;overflow:hidden}
+.hero-banner::before{content:'';position:absolute;left:-4px;top:-4px;width:150px;height:150px;background:url('halloween-web-corner.svg') left top/contain no-repeat;opacity:.30;pointer-events:none}
+.hero-banner::after{content:'';position:absolute;right:16px;bottom:12px;width:105px;height:105px;background:url('halloween-ghost.svg') center/contain no-repeat;opacity:.16;pointer-events:none}
+.hero-banner-kicker{color:#ffcf91!important}
+.hero-banner p{color:#f1ddec!important}
+.stat-card,.card,.panel,.content-card,.modal-content,.summary-card{border-color:#e8dcf0;box-shadow:0 8px 26px rgba(46,16,66,.06)}
+.stat-card:before{background:linear-gradient(90deg,#a348d3,#ff9a3c)!important}
+.section-label{color:#9245ad}
+.btn-secondary{background:#f2e6f8;color:#74359f}
+.btn-secondary:hover{background:#ead6f4}
+.pill,.badge{border-color:#e5c8ed}
+input:focus,select:focus,textarea:focus{border-color:#ad64cb!important;outline-color:#ad64cb!important;box-shadow:0 0 0 3px rgba(163,72,211,.10)!important}
+a{accent-color:#9146ba}
+input[type=checkbox],input[type=radio]{accent-color:#9146ba}
+#halloweenDecorLayer{position:fixed;inset:0;z-index:18;pointer-events:none;overflow:hidden}
+#halloweenDecorLayer .hd-web{position:fixed;top:0;width:190px;height:190px;background:url('halloween-web-corner.svg') center/contain no-repeat;opacity:.58}
+#halloweenDecorLayer .hd-web-right{right:0;transform:scaleX(-1)}
+#halloweenDecorLayer .hd-web-left{left:0}
+#halloweenDecorLayer .hd-ghost{position:fixed;right:20px;top:126px;width:88px;height:108px;background:url('halloween-ghost.svg') center/contain no-repeat;opacity:.96;filter:drop-shadow(0 14px 20px rgba(44,18,58,.2));animation:ghostFloat 4.8s ease-in-out infinite}
+#halloweenDecorLayer .hd-pumpkin{position:fixed;bottom:10px;width:92px;height:92px;background:url('halloween-pumpkin.svg') center/contain no-repeat;opacity:.98;filter:drop-shadow(0 10px 18px rgba(44,18,58,.15))}
+#halloweenDecorLayer .hd-pumpkin-left{left:18px}
+#halloweenDecorLayer .hd-pumpkin-right{right:92px;width:76px;height:76px;opacity:.92}
+.toast,.modal,.popover,.dialog,[role="dialog"]{z-index:40}
+@keyframes ghostFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+/* Small festive hint in tables and headers */
+.page-header h1::after,.topbar-copy h2::after{content:'  🎃';font-size:.85em;opacity:.8}
+/* Festive footer signature */
+body::after{content:'Eastern1961 Halloween Theme 2026';position:fixed;right:16px;bottom:12px;z-index:19;pointer-events:none;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:rgba(66,33,90,.42)}
+@media(max-width:1100px){
+  #halloweenDecorLayer .hd-ghost{width:70px;height:86px;right:10px;top:105px;opacity:.88}
+  #halloweenDecorLayer .hd-web{width:150px;height:150px;opacity:.5}
+}
+@media(max-width:700px){
+  #halloweenDecorLayer .hd-ghost{display:none}
+  #halloweenDecorLayer .hd-web{width:108px;height:108px;opacity:.46}
+  #halloweenDecorLayer .hd-pumpkin-left{left:6px;bottom:6px;width:60px;height:60px;opacity:.92}
+  #halloweenDecorLayer .hd-pumpkin-right{right:6px;bottom:6px;width:54px;height:54px;opacity:.85}
+  body::after{font-size:8px;right:8px;bottom:4px;letter-spacing:.1em}
+  .hero-banner::after,.login-brand-panel::after,.ems-login-brand-panel::after,.login-form-panel::after,.ems-login-form-panel::after{display:none}
+  .topbar::after{display:none}
+}
+@media(prefers-reduced-motion:reduce){.btn,.nav-btn,#halloweenDecorLayer .hd-ghost{transition:none!important;animation:none!important}}
+
+/* FIX: login splash must not reserve a full viewport once app dashboard is visible.
+   Previously the sidebar was fixed, disguising the unhidden login page as a giant top gap. */
+body:has(#appView:not(.hidden)) > #loginView,
+body:has(#appView:not(.hidden)) > .login-page {display:none!important;min-height:0!important;padding:0!important;}
+#appView:not(.hidden){display:block;min-height:100vh;}
+#appView:not(.hidden) .main-area{margin-top:0!important;}

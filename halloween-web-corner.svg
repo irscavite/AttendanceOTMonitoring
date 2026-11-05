@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" fill="none">
+  <g stroke="#d9c4ff" stroke-opacity="0.82" stroke-linecap="round">
+    <path d="M0 0L300 0" stroke-width="3"/>
+    <path d="M0 0L0 300" stroke-width="3"/>
+    <path d="M0 0L212 212" stroke-width="3.5"/>
+    <path d="M0 0C32 9 66 23 96 45" stroke-width="2.5"/>
+    <path d="M0 0C23 35 43 66 65 93" stroke-width="2.5"/>
+    <path d="M0 0C51 21 100 58 142 96" stroke-width="2.3"/>
+    <path d="M0 0C29 53 58 101 96 141" stroke-width="2.3"/>
+    <path d="M0 0C77 31 141 84 198 141" stroke-width="2.1"/>
+    <path d="M0 0C37 77 84 141 141 198" stroke-width="2.1"/>
+    <path d="M37 0C21 33 8 67 0 103" stroke-width="2"/>
+    <path d="M76 0C47 42 20 86 0 133" stroke-width="2"/>
+    <path d="M118 0C74 52 33 107 0 166" stroke-width="2"/>
+    <path d="M165 0C106 71 50 146 0 224" stroke-width="2"/>
+    <path d="M0 40C35 21 70 8 108 0" stroke-width="2"/>
+    <path d="M0 81C43 52 88 24 137 0" stroke-width="2"/>
+    <path d="M0 125C54 82 111 42 171 0" stroke-width="2"/>
+    <path d="M0 171C73 111 147 54 223 0" stroke-width="2"/>
+    <path d="M24 23C62 18 112 27 168 56" stroke-width="1.9"/>
+    <path d="M23 51C56 48 99 60 148 87" stroke-width="1.8"/>
+    <path d="M24 79C55 78 91 89 134 115" stroke-width="1.8"/>
+    <path d="M50 23C48 56 58 97 84 145" stroke-width="1.8"/>
+    <path d="M80 24C79 55 89 91 114 134" stroke-width="1.8"/>
+    <path d="M108 24C108 54 118 89 143 129" stroke-width="1.8"/>
+  </g>
+</svg>
